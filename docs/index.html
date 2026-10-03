@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>APA 引註格式教練｜高中小論文</title><link rel="stylesheet" href="styles.css"><script src="config.js"></script><script type="module" src="app.js"></script></head>
+<body><header><a class="brand" href="./">APA <span>引註格式教練</span></a><span class="tag">高中小論文 · 115學年度規範</span></header>
+<main><section class="hero"><p class="eyebrow">讀懂來源，留下引用的依據</p><h1>自己寫，<br>一起把引註檢查清楚。</h1><p>上傳小論文或貼上文字。找出問題與位置，再由你回原始資料確認、自行修正。</p><div class="steps"><span>01 提供作品</span><span>02 選擇檢查</span><span>03 依據結果修正</span></div></section>
+<section class="starters" aria-labelledby="starters-title"><h2 id="starters-title">從這裡開始</h2><div class="starter-grid">
+<button data-task="diagnosis">① 請先診斷我的 APA 引註進度，再一步一步引導我。</button>
+<button data-task="source">② 請引導我判斷文獻類型，再一步一步建立 APA 格式。</button>
+<button data-task="references">③ 我已有 APA 參考文獻格式，請幫我找出格式錯誤。</button>
+<button data-task="matching">④ 請逐筆檢查正文引註與參考文獻是否正確且相互對應並一一列出。</button>
+</div><p class="muted">點選後可補充資料，再按「開始檢查」。收到提示後，可在補充問題中回答並繼續。</p></section>
+<div class="workspace"><section class="panel input"><div class="section-title"><h2>提供檢查內容</h2><button id="clear" class="quiet">清除全部</button></div>
+<label class="upload" for="file"><strong>選擇 PDF 或 Word 檔案</strong><span>PDF、DOCX · 每份最多 10 MB</span><input id="file" type="file" accept=".pdf,.docx"></label>
+<p id="file-status" class="muted" role="status">文字型 PDF 可標示頁碼；Word 以段落編號定位。</p>
+<details id="preview"><summary>查看解析內容與限制</summary><pre id="preview-text">尚未選擇檔案。</pre></details>
+<label for="text">或貼上正文與參考文獻</label><textarea id="text" rows="8" maxlength="70000" placeholder="建議保留「陸、參考文獻」標題。貼上文字不能確認原檔的字型、粗體與縮排。"></textarea>
+<label for="task">這次要檢查什麼？</label><select id="task"><option value="diagnosis">① APA 引註進度診斷與引導</option><option value="source">② 文獻類型判斷與格式引導</option><option value="references">③ APA 參考文獻格式找錯</option><option value="matching">④ 正文與參考文獻逐筆對應</option><option value="format">六大架構與版面規範</option><option value="ethics">原文引用與圖表來源標示</option><option value="coach">詢問引註觀念</option></select>
+<label for="question">補充問題／回答提示</label><textarea id="question" rows="3" maxlength="2000" placeholder="例如：我已找到三筆資料，但還沒有在正文引註。收到提示後，可在這裡回答並繼續。"></textarea>
+<label for="code">班級通關碼</label><input id="code" type="password" autocomplete="off" placeholder="向老師取得，不是 API 金鑰">
+<label class="consent"><input id="consent" type="checkbox"><span>我同意將解析的文字及格式資訊傳送至 AI 檢查，已移除不必要的個人資料。</span></label>
+<button id="submit" class="primary">開始檢查</button><p id="status" role="status" aria-live="polite" class="muted">每次只執行所選項目，可分次完成。</p>
+</section><section class="panel output"><div class="section-title"><h2>檢查結果</h2><button id="download" class="quiet" disabled>下載結果</button></div><div id="result" aria-live="polite"><div class="empty"><div class="symbol">↔</div><h3>每一筆引註，都要有去有回。</h3><p>結果會列出文件位置、證據、規範依據與下一步。未確認的項目會保留，不會替你改寫作品。</p></div></div></section></div>
+<section class="notes"><h2>先了解檢查範圍</h2><div><article><h3>規範優先</h3><p>依教師提供的兩份115學年度格式文件。英文期刊卷數依範例採斜體；訪談資料可僅在正文引註。</p></article><article><h3>格式有判讀界線</h3><p>文字型 PDF 可確認頁數與紙張尺寸。字型、縮排、每頁頁首及圖表位置可能需要人工核對；掃描 PDF 請先轉成可選取文字的檔案。</p></article><article><h3>提供檢核，不代寫</h3><p>不產生替換文章或整份正確參考文獻，不替學生找文獻。不連網查證文獻真實性，無法僅憑上傳作品確認真正閱讀或引用。</p></article></div></section>
+</main><footer>興大附中江瑞顏老師 · AI 可能有錯誤或遺漏，最終仍以最新版官方格式範例及教師判讀為準。<br>檔案在瀏覽器解析；本站未設作品資料庫。檢查時會將解析內容送至 OpenAI API，並非完全離線。</footer></body></html>
